@@ -1,0 +1,4 @@
+#python-esl>=1.4.18
+#pycrypto>=2.6.1
+#paramiko>=2.1.1
+#redis>=2.10.5
