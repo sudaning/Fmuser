@@ -8,12 +8,9 @@ description = "A pure Python library designed to modify FREESWITCH's register us
 long_description = '''
 '''
 
-install_requires = [
-	# 'python-esl>=1.4.18',
-	# 'pycrypto>=2.6.1',
-	# 'paramiko>=2.1.1',
-	# 'redis>=2.10.5',
-]
+with open('./requirements.txt', 'r') as f:
+	 requirements = f.readlines()
+	 install_requires = [x for x in requirements if (x and x[0] != '#')]
 
 license = 'LICENSE'
 
