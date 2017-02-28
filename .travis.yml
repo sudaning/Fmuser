@@ -25,17 +25,11 @@ install:
   # Replace dep1 dep2 ... with your dependencies
   - conda create -q -n test-environment python=$TRAVIS_PYTHON_VERSION
   - source activate test-environment
-  - git clone --depth=50 --branch=master https://github.com/sudaning/Fneko.git sudaning/Fneko
-  - cd sudaning/Fneko/third-party
-  - sudo chmod 777 swig-3.0.12.tar.gz
-  - sudo tar -izxf swig-3.0.12.tar.gz
-  - cd swig-3.0.12
-  - sudo chmod +x configure
-  - sudo ./configure && sudo make && sudo make install
-  - cd ../
-  - python setup.py install
-  - cd ../
-- python setup.py install  # install
+  - sudo apt-get install libpcre3 libpcre3-dev swig
+  - sudo pip install pyFneko
+  - ls /usr/local/lib/python2.7/site-packages/
+  - python setup.py install  # install
+  
 
 # command to run tests
 script:
