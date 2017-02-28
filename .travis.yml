@@ -30,7 +30,6 @@ install:
   - ls /usr/local/lib/python2.7/site-packages/
   - python setup.py install  # install
   
-
 # command to run tests
 script:
   - cd tests
