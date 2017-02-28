@@ -10,7 +10,7 @@
 
 ##Introduction
 
-Fmuser is a pure Python library designed to modify FREESWITCH's register user information in batch mode.
+Fmuser is a pure Python library designed to modify [FREESWITCH](https://freeswitch.org/)'s register user information in batch mode.
 In [/scripts](https://github.com/sudaning/Fmuser/tree/master/scripts) , there are some scripts written by me for daily use.
 
 ##Installation
