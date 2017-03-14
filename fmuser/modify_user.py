@@ -62,6 +62,18 @@ class Muser:
 		self.__modify_rule = {'key':r'/params/param[@name="password"]', 'value':''}
 		self.__debug = debug
 
+	def __enter__(self):
+		return self
+
+	def __exit__(self, exc_type, exc_value, exc_tb):
+		if exc_tb:
+			return False
+		else:
+			self.__del__()
+
+	def __del__(self):
+		pass
+
 	def set_modify_rule(self, key=r'/params/param[@name="password"]', value=''): 
 		self.__modify_rule = {'key':key, 'value':value}
 		return self
