@@ -15,7 +15,7 @@ In [/scripts](https://github.com/sudaning/Fmuser/tree/master/scripts) , there ar
 ```python setup.py install```  
 
 ## upgrading
-1. Via **pip**  
+1. Via **pip**   
 ```pip install --upgrade pyFmuser```
 
 ## Examples
